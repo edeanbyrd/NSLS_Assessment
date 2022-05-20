@@ -31,7 +31,6 @@ class ForecastController extends BaseController
 			/* close cURL resource */
 			curl_close($ch);
 
-			//echo(array('Content-Type: application/json', 'HTTP/1.1 200 OK').$result);
 			$this->sendOutput(
                 $result,
                 array('Content-Type: application/json', 'HTTP/1.1 200 OK')
